@@ -3,5 +3,30 @@
   programs, or users (called clients) over a network. 
   It’s like a 24/7 assistant that listens for requests, processes them, and sends back responses.
 
+->ECMA Script
+  ECMA script is a standard for scripting languages like javascript,jscript and actionscript etc
+  Standard means following some rules like for declaring variables let a = 65; not a let = 65; 
+
+->V8 - chroome
+  spider monkey - Firefox
+  chakra - Microsoft Edge
+  JavascriptCore - Safari
+
+->V8 Engine
+  V8 is a chrome's javascript engine and is written in C++ Lang.
+  we can embedd this v8 into any other C++ application.
+  It executes any piece of javascript code.
+
+->✅Node.js is C++ application(written using C++) and it has V8 embedeed into it.
+
+->Question: If V8 executes any javascript code, then why do we need node.js ? Just put v8 on the server ?
+  
+  
+  
+
+
+
+
+
 
     
