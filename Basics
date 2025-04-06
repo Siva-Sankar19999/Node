@@ -9,6 +9,17 @@
         making it lightweight and efficient for data-intensive real-time applications.
 
 ->Key Features of Node.js?
+  1.Asynchronous & Non-Blocking I/O -
+    It handles requests asynchronously with blocking for one request. Like input/output operations (e.g., file access, network requests) are initiated 
+    without halting the main execution thread. Instead of waiting for a task to finish, the system delegates the work to background processes 
+    and responds later via callbacks, promises, or events once the operation completes.
+  2.Event Driven Architecture -
+    
+  3.
+    
+    
+ 
+
   
   
 
