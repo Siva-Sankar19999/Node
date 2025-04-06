@@ -20,13 +20,21 @@
 ->✅Node.js is C++ application(written using C++) and it has V8 embedeed into it.
 
 ->Question: If V8 executes any javascript code, then why do we need node.js ? Just put v8 on the server ?
-  
-  
-  
+  1.V8 cannot directly interact with a server's resources(read files,interact with hardware etc) and node.js
+    wraps V8 and adds critical features(add some API's) for server-side programming.
+  2.Node.js adds what V8 cannot do -
+    a)System Interaction 
+      Node.js adds APIs to interact with the operating system:
+      File System: Read/write files (fs module).
+      Networking: Create HTTP servers (http module).
+      Processes: Run shell commands (child_process).
+    b)Event-Driven Architecture
+      Event Loop: Manages asynchronous I/O (e.g., waiting for a database query without blocking the thread).
+      Non-Blocking I/O: Delegates slow tasks (like network requests) to the OS, freeing the main thread.
+    c)Built-In Modules
+      HTTP Server: Create web servers.
+      Crypto: Encrypt data.
+      Streams: Process large files efficiently.
 
+Time - 16:34
 
-
-
-
-
-    
