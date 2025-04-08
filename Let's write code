@@ -1,1 +1,8 @@
-Time - 17:00
+->In node, the global object is global
+->Global object `global` is not a feature of v8 engine, it is given by node.
+->In case of browser, global variable i.e;window is equal to this.
+  But in node.js `this` is an empty object.
+->In Browser window, this, frames, self all point to same global object
+->There is one common global variable name that is same in all environments
+  globalThis
+
