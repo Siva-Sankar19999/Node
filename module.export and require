@@ -4,6 +4,13 @@
   included module executed, it will not be accessible to current module as module protects their variables, functions
   from data leaking.
 
+->To access that variables, functions from included module we need to export and import like below
+  module.exports = {calculate:calculate};
+  const obj = require('./file.js');
+
+
+
+
 
 
 
