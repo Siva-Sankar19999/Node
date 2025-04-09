@@ -1,3 +1,9 @@
-->require function is to include another file/module into another one -> without exporting.
+->require function is to include another file/module into another one 
 
-time - 47:00
+->Suppose if we include a module into another module(just using with require function only) and once after that 
+  included module executed, it will not be accessible to current module as module protects their variables, functions
+  from data leaking.
+
+
+
+
