@@ -1,12 +1,32 @@
-->require function is to include another file/module into another one 
+->require function is to include another file/module into another file/module. 
 
 ->Suppose if we include a module into another module(just using with require function only) and once after that 
   included module executed, it will not be accessible to current module as module protects their variables, functions
   from data leaking.
 
-->To access that variables, functions from included module we need to export and import like below
+->To access that variables and functions from included module we need to export and import like below
   module.exports = {calculate:calculate};
   const obj = require('./file.js');
+
+->Above module pattern is called commonjs module(cjs) and it is default in node.
+
+->To use ES module system while executing things in node environment, we have to use
+  we need to use package.json and type = "module" for ESM 
+  and type = "commonjs" for CJS (optional)
+
+->❌need to write some notes regarding .mjs thing as no need to write module in package.json
+  and while executing we need to write .mjs while executing.
+
+  need to check in regular javascript also when importing module what is happening.
+
+
+
+
+
+
+
+
+
 
 
 
