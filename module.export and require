@@ -10,7 +10,7 @@
 
 ->Above module pattern is called commonjs module(cjs) and it is default in node.
 
-->To use ES module system while executing things in node environment, we have to use
+->To use ES module system while executing things in node environment,
   we need to use package.json and type = "module" for ESM 
   and type = "commonjs" for CJS (optional)
 
@@ -18,6 +18,9 @@
   and while executing we need to write .mjs while executing.
 
   need to check in regular javascript also when importing module what is happening.
+
+
+->35:00 min completed..
 
 
 
