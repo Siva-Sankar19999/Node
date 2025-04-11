@@ -1,7 +1,10 @@
-->require function is to include another file/module into another file/module. 
+->require function is to include file/module into another file/module. 
+
+->A module is like a file or piece of code which is to private to itself. To expose it's variable or functions we have to 
+  module.exports and requuire ini common js module system.
 
 ->Suppose if we include a module into another module(just using with require function only) and once after that 
-  included module executed, it will not be accessible to current module as module protects their variables, functions
+  included module executed, it will not be accessible to current module, as module protects their variables, functions
   from data leaking.
 
 ->To access that variables and functions from included module we need to export and import like below
@@ -29,22 +32,19 @@
    *
    */
 
+->✅Suppose in a folder there are bunch of files exporting some functionalities(fucntions,variables) and we will use index.js file 
+  to aggregate all the exports from multiple files. 
+    project/
+    ├── utils/
+    │   ├── add.js
+    │   ├── subtract.js
+    │   ├── multiply.js
+    │   ├── divide.js
+    │   └── index.js  <-- Aggregator file
+    └── app.js
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+->In Aggregator file, we import it and export it. 
+    
 
 
 
