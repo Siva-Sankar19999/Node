@@ -20,7 +20,18 @@
   need to check in regular javascript also when importing module what is happening.
 
 
-->35:00 min completed..
+->what is module.exports ? 
+  module.exports is an empty object and we can export like below also
+
+  /*
+   * module.exports.x = 65;
+   * module.exports.addFunction = addFunction;
+   *
+   */
+
+
+
+
 
 
 
