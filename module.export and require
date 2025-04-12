@@ -17,6 +17,9 @@
   we need to use package.json and type = "module" for ESM 
   and type = "commonjs" for CJS (optional)
 
+->ES module executes in strict mode and asynchronus and it is missing in 
+  common js module system
+
 ->❌need to write some notes regarding .mjs thing as no need to write module in package.json
   and while executing we need to write .mjs while executing.
 
