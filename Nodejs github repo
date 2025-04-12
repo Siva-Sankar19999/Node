@@ -1,1 +1,12 @@
+->What happpens behind the scenes when you requiring/loading a module ?
+  The code present in the file/module will be wrapped in function (IIFE) and later will be executed
+  and so that variables, functions will not pollute the other scope.
+
+->Nodejs modules are cached
+  node caches the require function result.
+
+
+  
+  
+  
 
