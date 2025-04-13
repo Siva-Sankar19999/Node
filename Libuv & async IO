@@ -17,10 +17,11 @@
   Threads exists inside a process and share's process memory and resources
   Each thread works on a different thing and complete concurrent tasks parallely.
 
-->
+->Actually javascript is synchronous, But to perform async tasks(like file access, db access,timers). Node js add some super power called
+  eg:(ibuv etc..) to javascript to handle async tasks.
 
+->v8 js engine offloads(delegates) async tasks to libuv and normal js tasks can v8 engine handle.
 
+->LibUV is written in C library and used to handle asynchronous I/O.
 
-
- 
-  
+->Once after the async I/O completed. Libuv put the callback in the callstack in v8 engine.
