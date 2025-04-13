@@ -1,5 +1,19 @@
 ->Generally in node.js, I/O operations are handled in a non-blocking way(async) using 
-  libuv. But still we can write using blocking manner using some functions like following
+  libuv. But still we can write using blocking manner using some functions like 
   fs.readFileSync('path',encoding,callback);
   Above code will block the main thread. As it will be handled by v8 js engine.
+
+->There are so many built in modules in node.js
+
+->https, console, crypto etc are core module
+
+->console is core module and it is part of the global namespace
+  we can access it without importing it. And we cannot add every core modules
+  to global namespace as it pollutes the variables.
+
+->
+
+
+
+
 
