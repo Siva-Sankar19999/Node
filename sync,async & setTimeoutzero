@@ -1,1 +1,5 @@
+->Generally in node.js, I/O operations are handled in a non-blocking way(async) using 
+  libuv. But still we can write using blocking manner using some functions like following
+  fs.readFileSync('path',encoding,callback);
+  Above code will block the main thread. As it will be handled by v8 js engine.
 
