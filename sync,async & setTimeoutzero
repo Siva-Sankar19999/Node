@@ -11,9 +11,14 @@
   we can access it without importing it. And we cannot add every core modules
   to global namespace as it pollutes the variables.
 
-->
+->How is the flow of code when we put setTimeout with 0 sec ?
+  setTimeout with 0 seconds doesnot execute after 0 sec exactly, It will execute 
+  only call stack of main thread is empty. (or)
+
+->callbacks will be pushed into callstack only after the callstack is empty after executing main 
+  file(synchronous code or non-blocking code).
 
 
 
-
+ 
 
