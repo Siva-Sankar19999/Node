@@ -3,6 +3,19 @@
   programs, or users (called clients) over a network. 
   It’s like a 24/7 assistant that listens for requests, processes them, and sends back responses.
 
+->✅With node.js, we will create an application server 
+  An application server is a software program (written in Node.js) that
+  Listens for HTTP/HTTPS requests on a specific port (e.g., 3000, 8080).
+  Executes business logic (your code) to process requests (e.g., fetch data, authenticate users).
+  Interacts with databases, external APIs, or services
+  Returns responses (JSON, HTML, etc.) to clients (browsers, apps)
+
+->✅Below explanation in a programmatic way (With the help of node.js)
+  HTTP Server: Created using Node.js http module or frameworks like Express.js.
+  Routes: Define endpoints (e.g., /api/users) and their handlers
+  Middleware: Functions that process requests before they reach your code (e.g., express.json()).
+  Database Connectors: Libraries like mongoose (MongoDB) or mysql2 (MySQL)
+
 ->ECMA Script
   ECMA script is a standard for scripting languages like javascript,jscript and actionscript etc
   Standard means following some rules like for declaring variables let a = 65; not a let = 65; 
