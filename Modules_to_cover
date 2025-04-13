@@ -1,1 +1,6 @@
-
+Module	           Use Case	Key                      Method/Concept
+http/https	      Web servers, APIs	              createServer, routing
+child_process     Offload CPU tasks               spawn, exec
+process           Environment variables,          process.env, SIGTERM handling
+                  shutdown
+events            Custom event-driven logic       EventEmitter, emit/on
