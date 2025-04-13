@@ -1,6 +1,7 @@
 ->Node.js has an event driven architecture and handles I/O operations asynchronusly.
 
-->Javascript is Synchronus and Single threaded language.
+->Javascript is Synchronus and Single threaded language.But Node js provides some helper functions for 
+  doing asynchronus tasks.
 
 ->Before learning thread, I need to learn what is "Process" and threads exist in process.
 
@@ -10,12 +11,15 @@
   When you open a chrome web browser in a computer, OS creates a separate process for it.
   and after that you open a notepad in computer, OS creates a separate process for it.
   If one crashes does not disturb other one.(This is main)
-  
 
 ->What is thread?
   Thread enable a program to perform multiple tasks concurrently by sharing process's memory and resource.
   Threads exists inside a process and share's process memory and resources
   Each thread works on a different thing and complete concurrent tasks parallely.
+
+->
+
+
 
 
  
