@@ -1,6 +1,19 @@
 ->Node.js has two main components 1.V8 engine & 2.libuv
 
 ->What happens when you give your javascript code to V8 engine
+  1.Parsing
+    a)Lexical analysis - our code is broken down into tokens
+    b)Syntax analysis (parsing) - "AST" is generated from the above tokens.
+  2.The AST is given to interpreter(Ignition)
+    Ignition interpreter converts the AST into byte code for execution
+    During this process, if there is any code that is repeatedly used that is given 
+    to JIT compliation and it converts into optimized machine code for execution
+
+->Is javascript compiled or interpreted langauge?
+  Javascript is both compiled and interpreted language and it uses JIT compilation.
+  
+->Some time we see unexpected token error this is because AST(Abstract Syntax tree not able to form from token)
+
   
         
   
