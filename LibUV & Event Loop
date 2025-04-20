@@ -10,8 +10,13 @@
   is free, event loop pull the callback from the callback queque and give to main execution content.
 
 ->Event loop has four phases
-  Timer(setTimeout,setInterval) -> Pool(I/O callbacks) -> Check(setImmediate) -> Close(socket)
-  Like callbacks corresponding to Timer will execute first and Pool etc
+  Timer(setTimeout,setInterval) -> Pool(I/O operations) -> Check(setImmediate) -> Close(socket close)
+  Like callbacks corresponding to Timer will execute first and Pool and so on
+
+->And Event loop has inner phase [ Process.next -> promise callbacks ] before running every phase,
+  first it will complete inner phase.
+
+
 
 
 
