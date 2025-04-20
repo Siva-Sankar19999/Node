@@ -1,1 +1,20 @@
+->As we know, Async tasks are offloaded to libUV
+
+->Asynchronus I/O and non-blocking I/O is possible because of LibUV
+
+->suppose for example a file read opeartion is there and it is deletegated to LibUV and once 
+  it is done and it is the responsibility of LibUV to return the calllback to main execution context.
+
+->if all the async tasks are completed at one time and these callbacks are maintained in their corresponding
+  callback queques and event loop continously check the main execution context if it is free or not and if it 
+  is free, event loop pull the callback from the callback queque and give to main execution content.
+
+->Event loop has four phases
+  Timer(setTimeout,setInterval) -> Pool(I/O callbacks) -> Check(setImmediate) -> Close(socket)
+  Like callbacks corresponding to Timer will execute first and Pool etc
+
+
+
+
+ 
 
