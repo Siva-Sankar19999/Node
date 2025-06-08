@@ -1,3 +1,10 @@
 ->Thread pool in libuv
 
 ->one cycle of event loop is known as tick
+
+->Is Nodejs single threaded or multithreaded?
+  It depends on input. If the input is javascript it is single threaded language and if it 
+  involves I/O operations like fs,network it will be multi-threaded as LibUV uses UV_thread Pool(By default four threads)
+
+
+
