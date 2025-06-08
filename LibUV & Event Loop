@@ -1,6 +1,6 @@
 ->As we know, Async tasks are offloaded to libUV
 
-->Asynchronus I/O and non-blocking I/O is possible because of LibUV
+->performing Asynchronus I/O and non-blocking I/O is possible because of LibUV
 
 ->suppose for example a file read opeartion is there and it is deletegated to LibUV and once 
   it is done and it is the responsibility of LibUV to return the calllback to main execution context.
@@ -14,21 +14,15 @@
   in callback queue and give it to call-stack for execution.
 
 
-->Event loop has four phases (Giving priority)
+->Pulling which callback is also important and it has priority and Event loop has four phases (Giving priority)
   Timer(setTimeout,setInterval) -> Pool(I/O operations) -> Check(setImmediate) -> Close(socket close)
   Like callbacks corresponding to Timer will execute first and Pool and so on
 
 ->And Event loop has inner phase [ Process.next -> promise callbacks ] before running every phase,
-  first it will complete inner phase.
+  first it will complete inner phase.Means like Before running every phase, it will check callbacks of Process.next and Promises.
 
-->Means like Before running every phase, it will check callbacks of Process.next and Promises.
-
-
-
-
-
-
-
+->If the main-thread is free and callback queue is alos free as all the callback are executed. Thenn event loop waits at
+  ✅pool phase(*)
 
 
 
