@@ -9,6 +9,11 @@
   callback queques and event loop continously check the main execution context if it is free or not and if it 
   is free, event loop pull the callback from the callback queque and give to main execution content.
 
+->Event Loop
+  It continously checks the callstack, whethere it is free or not. If it is free it pull the asyn task(completed one) and presented
+  in callback queue and give it to stack for execution.
+
+
 ->Event loop has four phases
   Timer(setTimeout,setInterval) -> Pool(I/O operations) -> Check(setImmediate) -> Close(socket close)
   Like callbacks corresponding to Timer will execute first and Pool and so on
