@@ -7,6 +7,7 @@
   involves I/O operations like fs,network it will be multi-threaded as LibUV uses UV_thread Pool(By default four threads)
 
 ->By Default there are 4 threads(UV threads) and if we give four async tasks and four will be completed at one time.
+  and we can increase or decrease the threads.
 
 ->Thread POOL -> fs, crypto, dns lookup & user specified input
 
