@@ -5,3 +5,5 @@ what is application server and webserver?
 what is DNS server?
 what is port number?
 what are some reservered port numbers?
+->In Hardware server we can create number of software servers and that is the reason we need to assign it to 
+  particular port.
