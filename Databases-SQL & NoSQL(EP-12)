@@ -1,6 +1,19 @@
 ->Database is a organized collection of data
 ->DBMS is a software that manages the database and interacts with endusers, applications.
   It(DBMS) is like piece of software that enables users to interact with database.
+->MongoDB
+  collection(eg like table)
+  document(eg like rows)
+  fields(eg like columns)
+  ->It has flexible schema
+  ->MAQ -Mongo Query Language
+  ->Easy to scale horizantally & vertically, but where as RDMS tough to scale horizantally
+  ->Real Time, Big Data, Distributed computing 
+
+
+  
+
+
 
 
 
