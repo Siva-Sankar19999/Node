@@ -1,2 +1,15 @@
 ->Mongodb is NOSQL Database and document database.
 
+->MongoDB offers its services through two primary models
+  MongoDB Atlas(Cloud based service)
+  Self manageable service(Downloadable)
+
+->MongoDB Compass
+  It is software that enable users to visually explore, manage, optimize your mongoDB Data.
+
+
+
+
+
+  
+
