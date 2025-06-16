@@ -1,1 +1,21 @@
+->Monolith vs Microservice
+  <->Dev Speed is more in Microservice and less in Monolith
+  <->Scalability
+     Tough to scale in monolith
+  <->Deployment
+     If we have small change in frontend, for that we need to deploy 
+     everything in monolith and in microservice we just need to deploy frontend service only.
+  <->Tech Stack
+     All the different backend services should use same tech stack(Monolith) and in microservice
+     we can use different tech stack for different serive like for email->GoLang and Payments->Java
+  <->Complexity
+     It is more in monolithic service
+  <->Fault Isolation
+     If there is any issue in any service, only that service will not work properly,
+     but where as in monolithic entire application will crash.
+
+     
+     
+    
+  
 
