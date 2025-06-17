@@ -1,1 +1,18 @@
+->Application
+ <->Create an account
+ <->Login
+ <->Update profile
+ <->Feed Page (People profiles)
+ <->Send Connection Request
+ <->See our matches
+ <->see the request we sent/ Received
 
+->LLD
+  <->Database Design
+     ->we need User collection
+       For Login, Feed page, create an account, Update Profile -> These pages use User Collection
+     ->For Connection Request
+       we need to store which user is linked to which user and these need separate collection(May be)
+       And Fields may be 1.From_User_ID(from which user we send it)  2.To_User_ID(to whom it is sent)  3.Connection_Status(pending[accept,rejected],ignored from left swipe)
+  <->API Design
+     
