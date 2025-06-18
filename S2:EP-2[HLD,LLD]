@@ -15,10 +15,15 @@
        we need to store which user is linked to which user and these need separate collection(May be)
        And Fields may be 1.From_User_ID(from which user we send it)  2.To_User_ID(to whom it is sent)  3.Connection_Status(pending[accept,rejected],ignored from left swipe)
   <->API Design
-     /signup    POST
-     /login     POST 
-     /profile   GET    - To read the User
-     /profile   POST   - To create a user 
-     /profile   PATCH  - To update the user
-     
-     
+     /signup          POST
+     /login           POST 
+     /profile         GET    - To read the User
+     /profile         POST   - To create a user 
+     /profile         PATCH  - To update the user
+     /profile         DELETE - To delete the user
+     /sendRequest     POST   - Interested/Ignored
+     /reviewRequest   POST   - Accept/ignored
+     /request         GET    - All the requests
+     /getMyConnections GET   - All your connections(you accepted/other accepted)
+
+
