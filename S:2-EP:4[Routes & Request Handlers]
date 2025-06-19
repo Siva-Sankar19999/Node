@@ -1,9 +1,10 @@
 ->Routes & Request Handlers
+  <->Route : Request Method(GET,POST,PUT,PATCH) + path
 
 ->app.use("/",(req,res)=>{
          res.send("Hello Home page");
       })
-  Above route overides all the routes and all requests will go this one only.
+  Above route overides all the routes and all requests will go this one only if used at starting.
 
 ->app.use("/test",(req,res)=>{
          res.send("hello from test route");   
@@ -21,6 +22,6 @@
   app.test('/hello/v1',(req,res)=>{
            res.send("Hello word-HD");
         });
-  In above, all the request will go to /hello route only.
+  In above 2 req's, all the request will go to /hello route only.
 
 
