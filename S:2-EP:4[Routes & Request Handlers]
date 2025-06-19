@@ -1,1 +1,26 @@
 ->Routes & Request Handlers
+
+->app.use("/",(req,res)=>{
+         res.send("Hello Home page");
+      })
+  Above route overides all the routes and all requests will go this one only.
+
+->app.use("/test",(req,res)=>{
+         res.send("hello from test route");   
+       });
+  for all the routes that is similar to 
+  /test, /test/abc/anything, /test/anything above route will take all the requests.
+
+->Will sequence of routes matters?
+  yes. we need to place more specific routes at top
+
+->app.test('/hello',(req,res)=>{
+         res.send("Hello World-Z");
+      });
+ 
+  app.test('/hello/v1',(req,res)=>{
+           res.send("Hello word-HD");
+        });
+  In above, all the request will go to /hello route only.
+
+
