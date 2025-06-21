@@ -32,6 +32,20 @@ Middlewares & Error Handlers
        res.send("Second route response);
      });
 
+->In above, if we place again we place next() method in second route, we will get cannot get /test
+  error as the request is still passing for next route and that route is not there.
+
+->Middleware
+  Middleware refers to functions that sit in middle of request-response cycle.
+  and It can execute any code, can modify req or response or can end the req-response cycle or call
+  next() to move on to the next middleware.
+  Type of Middleware -
+  <->Application level -  Applied to all routes using app.use()
+     Route-level: Applied to specific routes
+     Error-handling: Catches and handles errors (uses 4 parameters: err, req, res, next)
+     Third party: CORS, Morgan, helmet.
+     
+
 
 
 
