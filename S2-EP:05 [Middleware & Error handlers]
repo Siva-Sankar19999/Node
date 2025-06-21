@@ -1,3 +1,9 @@
 Middlewares & Error Handlers
 
+->app.use("/test",(req,res)=>{  });
+  In above, if we don't provide any res.send("some string"). The request keeps on going and it will hang.
+
+->A route can have two route handlers
+  app.use
+
 
