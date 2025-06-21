@@ -1,9 +1,43 @@
 Middlewares & Error Handlers
 
-->app.use("/test",(req,res)=>{  });
+->app.use("/test",(req,res)=>{ 
+        // no res.send method is used.
+        });
   In above, if we don't provide any res.send("some string"). The request keeps on going and it will hang.
 
-->A route can have two route handlers
-  app.use
+->A route can have two/multiple route handlers and it should call next() to get next route handler.
+  and in first route handler if it has res.send() method..response will go to the client and 
+  in second route handler if it has again res.send() method..we will see error in the application as TCP connection
+  is done after the response sent by first route handler.
+
+  ✅ And res.send doesnot work like return statement. and after res.send() method, we can write code and node will execute it.
+  // route routeHandlers callbacks
+  app.use("/test",(req,res,next)=>{
+      console.log("Firt route response..!);
+      res.send("Firt route response");     // check this line as response will be sent
+      next();
+    },(req,res)=>{
+      console.log("Second Route response..!");
+      res.send("Second Route response");
+    })
+
+->one more way of writing multiple routeHandlers
+  app.get("/test",(req,res,next)=>{
+      console.log("first route console");
+      next();
+   });
+
+   app.get("/test",(req,res)=>{
+       console.log("second route console");
+       res.send("Second route response);
+     });
+
+
+
+
+
+  
+  
+
 
 
