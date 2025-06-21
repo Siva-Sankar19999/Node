@@ -24,4 +24,27 @@
         });
   In above 2 req's, all the request will go to /hello route only.
 
+->Handling different HTTP methods
+  app.use("/test",callback); -> It will handle all the HTTP methods(GET, POST, PUT, PATCH,DELETE) for test route.
+  <->app.get('/test',callback); It will handle only get request of test route 
 
+->Different Routing type(Kind of patterns in path)
+  app.get("/ab?c",callback); -> Here below ac,abc works as ? makes b as optional
+
+  app.get("/ab+c",callback);   -> Here b can repeat any number of times btwn a and c
+
+  app.get("/ab*cd",callback);  -> Here path should start with ab and end cd and in btwn we can place anything.
+
+
+->Query parameter route
+  app.get("/user",(req,res)=>{            -- http://localhost:3000/abc?userID=10
+      const userID = req.query.userID;
+      console.log(userID,'User ID');
+      res.send({name: "Meena Kumari"});
+    }); 
+
+->Dynamic routes
+  app.get("/user/:userID",(req,res)=>{    -- http://localhost:3000/abc/10
+      const userID = req.params;
+      res.send({name: "Meena Kumari"});
+  });
