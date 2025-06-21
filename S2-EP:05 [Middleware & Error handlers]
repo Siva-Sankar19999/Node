@@ -1,4 +1,4 @@
-Middlewares & Error Handlers
+⚠️Middlewares & Error Handlers(Important concept)
 
 ->app.use("/test",(req,res)=>{ 
         // no res.send method is used.
@@ -45,9 +45,17 @@ Middlewares & Error Handlers
      Error-handling: Catches and handles errors (uses 4 parameters: err, req, res, next)
      Third party: CORS, Morgan, helmet.
 
-->How ExpressJS server handle the requests ? means how routes execution when requests come?
+->✅How ExpressJS server handle the requests ? means how routes execution when requests come?
   Express keep the functions/middleware/routes in a list from top to bottom. And if a request comes in then 
   express server go through the list from top to bottom and if anything matches it goes through until response send.
+
+
+->Why on earth we need a middleware?
+  Suppose some api's like admin/getData, admin/deleteData, admin/postData 
+  for all above special routes we need to check the authorization of that person and we need to write some logic to validate the 
+  user and instead of writing for every route. we use middleware concept.
+
+->42 min
 
 
 
