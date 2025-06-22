@@ -68,6 +68,14 @@
 
   //Need to write middleware functions for admin route
 
+  app.use("/use",(req,res)=>{
+
+  });
+
+
+
+  
+
 
 
   
