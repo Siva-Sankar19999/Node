@@ -35,6 +35,21 @@
 ->In above, if we place again we place next() method in second route, we will get cannot get /test
   error as the request is still passing for next route and that route is not there.
 
+
+->✅How ExpressJS server handle the requests ? means how routes execution when requests come?
+  Express keep the functions/middleware/routes in a list from top to bottom. And if a request comes in then 
+  express server go through the list from top to bottom and if anything matches it goes through until response send.
+
+
+->H/W we can use app.use and app.all for handling all the HTTP methods ?
+
+
+->Why on earth we need a middleware?
+  Suppose some api's like admin/getData, admin/deleteData, admin/postData 
+  for all above special routes we need to check the authorization of that person and we need to write some logic to validate the 
+  user and instead of writing for every route. we use middleware concept.
+
+
 ->Middleware
   Middleware refers to functions that sit in middle of request-response cycle.
   and It can execute any code, can modify req or response or can end the req-response cycle or call
@@ -45,17 +60,22 @@
      Error-handling: Catches and handles errors (uses 4 parameters: err, req, res, next)
      Third party: CORS, Morgan, helmet.
 
-->✅How ExpressJS server handle the requests ? means how routes execution when requests come?
-  Express keep the functions/middleware/routes in a list from top to bottom. And if a request comes in then 
-  express server go through the list from top to bottom and if anything matches it goes through until response send.
+->✅For route pattern "/"            -> app.use will match or overide all the route patterns
+                                      app.get will "/" pattern only.
+
+  For Route pattern "/admin"       -> app.use will match /admin, /admin/anything, admin/anything/anything, admin/etc...
+                                      app.get will match /admin pattern only.
+
+  //Need to write middleware functions for admin route
 
 
-->Why on earth we need a middleware?
-  Suppose some api's like admin/getData, admin/deleteData, admin/postData 
-  for all above special routes we need to check the authorization of that person and we need to write some logic to validate the 
-  user and instead of writing for every route. we use middleware concept.
 
-->42 min
+  
+
+
+
+
+
 
 
 
