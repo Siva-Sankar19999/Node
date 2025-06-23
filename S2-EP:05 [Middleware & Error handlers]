@@ -88,3 +88,45 @@
   app.delete("/admin/deleteData",(req,res)=>{
       res.send("Admin Data deleted successfully.. ")
   });
+
+
+->Error Middleware
+  If there is any error in the route/middleware(in case of sync error) -> express automatically catches it without try/catch 
+  and pass it to error middleware(app.use("/",callback))..and it skips the matching routes in top-to-bottom matching routes.
+
+  app.get("/test",(req,res)=>{
+     if(false){
+        res.send("Test Data fetched..!");
+     }
+     throw new Error("Something went wrong..!");
+  });
+
+  ✅/* Even though it is matching route, But express forward it to error middleware only and skips matching routes */
+  app.use("/",(req,res)=>{
+    res.send("USE Route..!");
+  });
+
+  app.use("/",(err,req,res,next)=>{
+    res.status(500).send("Error caught successfully");
+  });
+
+
+->Unhandled async errors (Error Middleware)
+  ⚠️Async errors will crash your appliaction or request will be in hanged state.
+  Express won't catch the errors in the async functions like async/await, promises, callbacks and will not pass it to
+  error middleware.
+  we need to handle safely and call ✅next() method for handling over to error middleware
+
+  /* Handling errors occured in async function */
+  // Raising error in async functions
+  app.get("/test",(req,res,next)=>{
+      Promise.reject(new Error("something wrong happend..!");)
+      .then()
+      .catch(next);
+  });
+
+  // Error Middleware 
+  app.use((err,req,res,next)=>{
+     res.status(500).send("Server Error);
+  });
+
