@@ -1,4 +1,4 @@
 ->To connect our nodejs application to MongoDB cluster, we have to use mongoose npm package.
 
-->
+->we need to connect DB first, Before making server running on the port.
 ->
