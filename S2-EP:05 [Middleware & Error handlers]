@@ -66,37 +66,22 @@
   For Route pattern "/admin"       -> app.use will match /admin, /admin/anything, admin/anything/anything, admin/etc...
                                       app.get will match /admin pattern only.
 
-  //Need to write middleware functions for admin route
+->Middleware route example for admin
+  app.use("/admin",callback);
 
-  app.use("/use",(req,res)=>{
+  callback:
+  const authAdmin = (req,res,next)=>{
+     const token = "xyz";
+     if(token == "xyz"){
+        next();
+     }
+     res.status("401").send("Unauthorized");
+  }
 
+  app.get("/admin/getData",(req,res)=>{
+      res.send("Fetched all the Admin Data");
   });
 
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-     
-
-
-
-
-
-  
-  
-
-
-
+  app.delete("/admin/deleteData",(req,res)=>{
+      res.send("Admin Data deleted successfully.. ")
+  });
