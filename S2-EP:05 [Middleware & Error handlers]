@@ -21,6 +21,9 @@
       res.send("Second Route response");
     })
 
+->✅⚠️Once a request enters into a route, it should have either res.send() or next(), otherwise it will go on hang mode even other 
+     matching routes are there in bottom.
+
 ->one more way of writing multiple routeHandlers
   app.get("/test",(req,res,next)=>{
       console.log("first route console");
