@@ -56,7 +56,7 @@
     module.exports.
     So making any changes like this exports.a = 64; will work as module.exports and exports pointing to same object. And the same change will reflect in module.exports also.
     ❌exports = {name:"Meena"}; -> Don't do.
-    Node.js only cares and exports onle modules.exports when we do require in another file..whatever is there in that object will be exported.
+    Node.js only cares and exports onle modules.exports when we do require in another file..whatever is there in that (module.exports)object will be exported.
 
 
 
