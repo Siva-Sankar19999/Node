@@ -1,7 +1,7 @@
 ->require function is to include file/module into another file/module. 
 
-->A module is like a file or piece of code which is to private to itself. To expose it's variable or functions we have to 
-  module.exports and requuire ini common js module system.
+->A module is like a file or piece of code which is to private to itself. To expose it's variable or functions we have to use
+  module.exports and requuire in common js module system.
 
 ->Suppose if we include a module into another module(just using with require function only) and once after that 
   included module executed, it will not be accessible to current module, as module protects their variables, functions
@@ -28,12 +28,16 @@
 
 ->what is module.exports ? 
   module.exports is an empty object and we can export like below also
-
-  /*
+  /**
    * module.exports.x = 65;
    * module.exports.addFunction = addFunction;
    *
    */
+  
+  ✅ we can export variable,function,class like below
+     const firstName = "Tom";  
+     module.exports = firstName; usage -> const a = require('filepath');
+   
 
 ->✅Suppose in a folder there are bunch of files exporting some functionalities(fucntions,variables) and we will use index.js file 
   to aggregate all the exports from multiple files. 
@@ -48,6 +52,11 @@
 
 ->In Aggregator file, we import it and export it. 
     
+->✅Reassigning to exports will not export anything as exports is just a reference variable that pointing to module.exports. and if we reassign, it will loose the reference of 
+    module.exports.
+    So making any changes like this exports.a = 64; will work as module.exports and exports pointing to same object. And the same change will reflect in module.exports also.
+    ❌exports = {name:"Meena"}; -> Don't do.
+    Node.js only cares and exports onle modules.exports when we do require in another file..whatever is there in that object will be exported.
 
 
 
