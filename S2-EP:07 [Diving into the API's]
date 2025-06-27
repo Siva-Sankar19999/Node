@@ -1,2 +1,6 @@
 
 ->when we hit the API with JSON object in node, we should need some middleware for converting that JSON.
+->Right now, express is provinding that middleware 
+  app.use(express.json());
+
+
