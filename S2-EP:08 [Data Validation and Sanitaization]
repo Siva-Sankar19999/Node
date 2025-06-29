@@ -1,1 +1,16 @@
+->Validations
+  <->User document should not be created when firstname or emailId is not there(we have to provide require in schema level)
+  <->Unique type -> There should be one user with one emailID
+  <->we can add custom validation at Mongodb schema level using validate function.
+     This validate function will not run for update functions by default and we have to turn on using options.
+  // validations at schema level 
+  Commit ID - https://github.com/Siva-Sankar19999/DevTinder/commit/9af6557c039561c3362394dfe1127cb723fd80c9
 
+->API Level Validations
+  <->we should not allow Email-ID to be changed.
+  // Field level validation for not to chnage Email-ID
+  commit ID : https://github.com/Siva-Sankar19999/DevTinder/commit/62be4b6a544175a127f6d8ceabae79152b6f13c7
+
+->we can use external package for validation -> validator
+  Commit ID - https://github.com/Siva-Sankar19999/DevTinder/commit/1ea80da4b3611c4a94e550a56976fb2b95583799
+ 
