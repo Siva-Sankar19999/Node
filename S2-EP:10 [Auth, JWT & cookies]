@@ -10,7 +10,13 @@
   ✅The genearl process, when browser hit the /login api -> It will authenticate the user by credentials and genearte a JWT token and store it in cookie and send along with the response.
   By doing above process, we don't need to use authentication middleware evrytime(validate user), we just need to use token and validate the user.
 
+->There are 3 things in JWT 
+  Header  -> Algorithm & Token type
+  payload -> we can hide some data inside this payload and we can store some private key also
+  signature -> signature
 
-  
-  
- 
+commit ID- https://github.com/Siva-Sankar19999/DevTinder/commit/280702156b9b68962618ae1d25ee8d7d87437060
+
+
+
+
