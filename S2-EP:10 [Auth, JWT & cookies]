@@ -1,1 +1,16 @@
-->Authentication
+->Authentication, JWT tokens & cookies
+
+->Browser and API server Interaction 
+  When we hit the API server, a TCP/IP connection made btwn Server and browser and it will be lost when the server replied with response. Stateless communication.
+
+->we should not allow users to get access to /feed api, /user api, /delete api etc without authentication
+  and for that we should add authenticated middleware
+
+->what do you mean by login?
+  ✅The genearl process, when browser hit the /login api -> It will authenticate the user by credentials and genearte a JWT token and store it in cookie and send along with the response.
+  By doing above process, we don't need to use authentication middleware evrytime(validate user), we just need to use token and validate the user.
+
+
+  
+  
+ 
