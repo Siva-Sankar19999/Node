@@ -21,6 +21,14 @@ commit ID- https://github.com/Siva-Sankar19999/DevTinder/commit/280702156b9b6896
 
 ->✅Commit-ID : https://github.com/Siva-Sankar19999/DevTinder/commit/ab0af45730cf59d56347c502fa6aaf7e24629def
 
+->Mongoose Schema methods 
+  we can offload some methods to mongoose schema. Previous way is also fine and it just adds a indutry level only.
+  ✅commit-ID : https://github.com/Siva-Sankar19999/DevTinder/commit/6028727e6f2791d9f787576770f34bfaaf9bc9da
+
+
+
+
+
 
   
 
