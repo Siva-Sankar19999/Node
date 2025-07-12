@@ -1,1 +1,2 @@
+->pre method in schema level help us to run some function whenever we try to do save() function on document.
 
