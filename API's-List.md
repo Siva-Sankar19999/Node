@@ -1,0 +1,20 @@
+## authRouter
+  POST - Signup
+  POST - Login
+  POST - Logout
+
+## profileRouter
+  GET   - profile/view
+  PATCH - profile/edit
+  PATCH - profile/password
+
+## connectionRequestRouter
+  POST  - request/send/interested/:userId
+  POST  - request/send/ignored/:userId
+  POST  - request/review/accepted/:reqId
+  POST  - request/review/rejected/:reqId
+
+## userRouter
+  GET  - user/connections
+  GET  - user/requests
+  GET  - user/feed
