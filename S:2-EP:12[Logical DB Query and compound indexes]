@@ -2,5 +2,8 @@
   like a handler function that execute before saving.
   commit-Id : pending
 
-->
+->Logical OR DB query 
+  collection.findOne({
+  $or: [ {key:value}, {key:value}] });
 
+->
