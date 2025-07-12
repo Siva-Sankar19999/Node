@@ -2,6 +2,13 @@
   like a handler function that execute before saving.
   commit-Id : pending
 
+->we can restrict user to enter values as per db schema using enum
+ gender : {
+   type : String,
+   enum : ["male","female","others"],   -> This will restrict and message is optional
+   messgae : `{VALUE} is incorrect input` 
+ }
+
 ->Logical OR DB query 
   collection.findOne({
   $or: [ {key:value}, {key:value}] });
