@@ -10,9 +10,8 @@
 
 ## connectionRequestRouter
   POST  - request/send/:status/:userId    -> interested, ignored in place of status
+  POST  - request/review/:status/:reqId   -> accepted, rejected in place of status
   
-  POST  - request/review/accepted/:reqId
-  POST  - request/review/rejected/:reqId
 
 ## userRouter
   GET  - user/connections
