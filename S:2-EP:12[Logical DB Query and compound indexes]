@@ -6,4 +6,4 @@
   collection.findOne({
   $or: [ {key:value}, {key:value}] });
 
-->
+->Indexing
