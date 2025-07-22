@@ -6,4 +6,5 @@
   /feed?page=2&limit=10 =>  skip-10 (11 to 20) 
   /feed?page=3&limit=10 =>  skip-20 (21 to 30)
 
-17
+  skip = (page-1)*limit;
+  commit-ID : https://github.com/Siva-Sankar19999/DevTinder/commit/0f6a367791a1eafc6f00b6d2e256723c956b9b5f
