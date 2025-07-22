@@ -1,3 +1,8 @@
 ->For this Frontend project we are using vite bundler
   this vite tool can be used for vuejs, nextjs, Reactjs
 
+->scallfolding for react project using vite
+  npm create vite@latest my-vue-app -- --template react
+
+
+
