@@ -4,5 +4,11 @@
 ->scallfolding for react project using vite
   npm create vite@latest my-vue-app -- --template react
 
+->setting tailwind in our project
+
+->we are using daisy UI style component library
+
+
+
 
 
